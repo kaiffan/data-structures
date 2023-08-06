@@ -40,15 +40,13 @@ public class Stack<T>{
     }
 
     public int size() {
-        int counter = 1;
+        int counter = 0;
         Element tmpHead = head;
 
-        while (tmpHead.next != null) {
+        while (tmpHead != null) {
             counter++;
             tmpHead = tmpHead.next;
         }
         return counter;
     }
-
-
 }
